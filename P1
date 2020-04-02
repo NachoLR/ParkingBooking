@@ -1,0 +1,6 @@
+Proyecto 1:
+Queremos un formulario de recogida de información con texto e imágenes,
+que se inserten en una base de datos (postgreSQL preferible)
+con un mínimo de 3 entidades relacionadas creadas a partir de ese formulario.
+Además queremos que incluya una librería de OCR donde algún dato numérico o
+texto se recoja de la imagen y se inserte como datos.

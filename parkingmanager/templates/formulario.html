@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Place Booking</title>
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+<body>
+<div id="box">
+    <h1>Book your place</h1>
+     <form method="POST"  enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+      <br>
+      <input class="myButton" type="submit" value="Makebook">
+</form>
+
+
+</div>
+
+</body>
+</html>

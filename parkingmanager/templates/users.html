@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+
+</head>
+<body>
+
+<table id="box">
+    <th>Id User</th>
+    <th>User</th>
+    <th>Car plate</th>
+    <th>Place code</th>
+{% for user in users_list %}
+    <tr>
+    <td align="center">{{ user.id}}</td>
+        <td align="center"> {{ user.name}} {{ user.surname}}</td>
+    <td align="center">{{ user.car.plate}}</td>
+    <td align="center">{{ user.place.code}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
